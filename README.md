@@ -9,12 +9,12 @@ This module also serves the "relay-response" post from the payment gateway which
 Finally, this module provides a post interface to process no-charge transactions directly (without any information passing throught authorize.net),  allowing a single form to handle both paid and non-paid order processing. This is useful in environments where credit cards are not the only form of payment or where free products are mixed with paid.
 
 ### environment
-This module requires credentials to come from process.env varables `ANK`, `ANID`, and `ANM`. Use a shell script like the one below to set the Authorize.Net credentials.
+This module requires credentials to come from process.env varables `ANK`, `ANID`, and `ANM`.
 
 ```sh
 export ANK={transaction_key}
 export ANID={login}
-export ANM={MD5hash_string}
+export ANM={MD5hash}
 ```
 
 ### API
@@ -30,7 +30,7 @@ var aNetConfig = {
 };
 
 // instantiate
-var dpm = require('../authorize-net-dpm')(aNetConfig, sessionOpts.store);
+var dpm = require('authorize-net-dpm')(aNetConfig, sessionOpts.store);
 
 // express routes
 app.post(aNetConfig.relay,       dpm.postDPMrelay);
