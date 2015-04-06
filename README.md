@@ -22,9 +22,9 @@ export ANM={MD5hash}
 ```javascript
 // configure
 var aNetConfig = {
-  appUrl: process.env.APP,                    // E.g. https://my.example.com/
-  relay: '/server/authnet/relay-response',    // as configured at Authorize.net
-  fingerprint: '/server/authnet/fingerprint',
+  appUrl: process.env.APP,                       // appUrl base e.g. https://example.com
+  relay: '/server/authnet/relay-response',       // url path to relay response
+  fingerprint: '/server/authnet/fingerprint',    // url path to thank-you page
   noCharge: '/server/nocharge',
   thankYou: '/server/reg-thank-you'
 };
@@ -39,13 +39,17 @@ app.post(aNetConfig.noCharge,    dpm.postNoCharge);
 
 ```
 
-### notes
+### module parameters
 
 - The 1st parameter is used for configuration options such as the relay-response URL (required). 
 
 - The 2nd parameter is optional. Use it to pass an [express-session](https://github.com/expressjs/session#compatible-session-stores) store api. If this is provided and if a `session` object is found on requests at runtime, the dpm module will persist order data in `session.orders`
 
-- by setting `dpm.processOrder`, custom post-processing can be performed after a payment is processed. This function will be called with the signature `processOrder(data, cb)` allowing for async post-processing e.g. to send email before responding with callback `cb()`.
+### additional hooks
+
+- Set `dpm.processOrder` for custom post-processing after a payment is processed. This function will be called with the signature `processOrder(data, cb)` allowing for async post-processing e.g. to send email before responding with callback `cb()`.
+
+
 
 
 ### Example
