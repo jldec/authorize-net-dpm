@@ -49,7 +49,7 @@ app.post(aNetConfig.noCharge,    dpm.postNoCharge);
 
 - Set `dpm.processOrder` for custom post-processing after a payment is processed. This function will be called with the signature `processOrder(data, cb)` allowing for async post-processing e.g. to send email before responding with callback `cb()`.
 
-- A few additional hooks are available in [the code](blob/master/authorize-net-dpm.js).
+- A few additional hooks are available in [the code](authorize-net-dpm.js).
 
 ### Example
-- Check out the [example](tree/master/example) for information about required form fields and other details.
+- Check out the [example](example) for information about required form fields and other details.
