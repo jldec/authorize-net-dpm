@@ -1,4 +1,4 @@
-## Authorize.NET Direct Post Method sandbox for node.js and heroku
+## Authorize.NET Direct Post Method sandbox example
 
 This is a small node.js Express server for sandbox testing the Authorize.Net DPM payment processing interface using the [authorize-net-dpm](authorize-net-dpm) module.
 
@@ -37,7 +37,7 @@ lt --port 3001 --subdomain {yourname}
 - entering a zero amount should hide the credit card fields and submitting it, perform a noCharge payment, also resulting in a thankyou page.
 
 ### notes on required fields
-All of the fields below except firstname, lastname, and ZIP are required for payment processing. The fields with an `x_` prefix are used internally by the authorize-net-dpm module for additional validation features.
+All of the fields below except firstname, lastname, and ZIP are required for payment processing. The fields without an `x_` prefix are used internally by the authorize-net-dpm module for additional validation.
 
 ```html
 <form id="form" method="post" action="https://test.authorize.net/gateway/transact.dll">
