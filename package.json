@@ -1,0 +1,16 @@
+{
+  "name": "authorize-net-dpm",
+  "version": "0.5.0",
+  "description": "node.js Express middleware for Authorize.net SIM/DPM",
+  "main": "authorize-net-dpm.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jldec/authorize-net-dpm.git"
+  },
+  "author": "jurgen leschner",
+  "license": "MIT"
+}

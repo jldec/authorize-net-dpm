@@ -1,0 +1,9 @@
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+html,button,input,select,textarea { font-family:Tahoma, Arial, Helvetica, sans-serif; color:#222; }
+h1, h2, h3, h4, h5, h6 { color: #0069b5; padding-top:0.4em; margin:0; }
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.1em; }
+body  { margin:1em; }
+body.center { text-align:center; }
+input { width:25em; border:solid 1px #ccc; margin:1px 0; font-family:Monaco,monospace; font-size:smaller; }
+label { display:inline-block; width:10em; text-align:right; padding-right:4px; vertical-align:top; }

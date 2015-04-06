@@ -1,0 +1,18 @@
+{
+  "name": "authorize-net-dpm-example",
+  "version": "0.5.0",
+  "dependencies": {
+    "express": "4.x",
+    "express-session": "*",
+    "body-parser": "*",
+    "underscore": "*",
+    "debug": "*"
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "author": "jurgen leschner",
+  "license": "MIT"
+}
