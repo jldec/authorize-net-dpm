@@ -9,7 +9,7 @@ This module also serves the "relay-response" post from the payment gateway which
 Finally, this module provides a post interface to process no-charge transactions directly (without any information passing throught authorize.net),  allowing a single form to handle both paid and non-paid order processing. This is useful in environments where credit cards are not the only form of payment or where free products are mixed with paid.
 
 ### environment
-This module requires credentials to come from process.env varables `ANK`, `ANID`, and `ANM`.
+This module requires credentials to come from process.env variables `ANK`, `ANID`, and `ANM`.
 
 ```sh
 export ANK={transaction_key}
@@ -22,11 +22,11 @@ export ANM={MD5hash}
 ```javascript
 // configure
 var aNetConfig = {
-  appUrl: process.env.APP,                       // appUrl base e.g. https://example.com
-  relay: '/server/authnet/relay-response',       // url path to relay response
-  fingerprint: '/server/authnet/fingerprint',    // url path to thank-you page
-  noCharge: '/server/nocharge',
-  thankYou: '/server/reg-thank-you'
+  appUrl:       process.env.APP,         // e.g. https://example.com
+  relay:        '/server/authnet/relay-response',
+  fingerprint:  '/server/authnet/fingerprint',
+  noCharge:     '/server/nocharge',
+  thankYou:     '/server/reg-thank-you'
 };
 
 // instantiate
@@ -41,7 +41,7 @@ app.post(aNetConfig.noCharge,    dpm.postNoCharge);
 
 ### module parameters
 
-- The 1st parameter is used for configuration options such as the relay-response URL (required). 
+- The 1st parameter is used for configuration options such as the relay-response URL (required).
 
 - The 2nd parameter is optional. Use it to pass an [express-session](https://github.com/expressjs/session#compatible-session-stores) store api. If this is provided and if a `session` object is found on requests at runtime, the dpm module will persist order data in `session.orders`
 

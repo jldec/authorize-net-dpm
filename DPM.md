@@ -89,9 +89,9 @@ Validating the MD5 hash is performed by the server handling the relay response U
 > An error occurred while trying to report this transaction to the merchant. An e-mail
 > has been sent to the merchant informing them of the error. The following is the result
 > of the attempt to charge your credit card.
-> 
+>
 >   This transaction has been approved.
-> 
+>
 > It is advisable for you to contact the merchant to verify that you will receive the product or service.
 
 #### correlating POSTed payment transactions with orders
