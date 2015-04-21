@@ -53,3 +53,7 @@ app.post(aNetConfig.noCharge,    dpm.postNoCharge);
 
 ### Example
 - Check out the [example](example) for information about required form fields and other details.
+
+
+### license
+(c) 2015 Jurgen Leschner, [MIT](http://opensource.org/licenses/MIT) license
