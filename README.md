@@ -8,6 +8,8 @@ This module also serves the "relay-response" post from the payment gateway which
 
 Finally, this module provides a post interface to process no-charge transactions directly (without any information passing throught authorize.net),  allowing a single form to handle both paid and non-paid order processing. This is useful in environments where credit cards are not the only form of payment or where free products are mixed with paid.
 
+For more gory details about DPM, see DPM.md in this directory.
+
 ### environment
 This module requires credentials to come from process.env variables `ANK`, `ANID`, and `ANM`.
 

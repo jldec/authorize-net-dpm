@@ -8,7 +8,7 @@ var debug = require('debug')('dpm:example');
 var express = require('express');
 var util = require('util');
 var assert = require('assert');
-var _ = require('underscore');
+var esc = require('lodash.escape');
 
 assert(process.env.APP, 'please provide base url and other authnet credentials in environment');
 
@@ -127,7 +127,7 @@ function errHandler(err, req, res, next) {
 
 // minimal html object inspector
 function htmlify(obj) {
-  return '<pre>' + _.escape(util.inspect(obj)) + '</pre>'
+  return '<pre>' + esc(util.inspect(obj)) + '</pre>'
 }
 
 // return serializable parts of req

@@ -30,11 +30,13 @@ lt --port 3001 --subdomain {yourname}
 
 ### test locally
 - start the server with `node server`
-- navigate to https://{yourname}.localtunnel.me to see the test payment form
+- browse to https://{yourname}.localtunnel.me/echo to see your session data (if you don't have a JSON viewer addon in your browser, use /echohtml instead). Each time you refresh, the `reqcnt` should increase by 1, but the sessionID should remain fixed.
+- browse to https://{yourname}.localtunnel.me/ to see the test payment form
 - modify the price on the form, then navigate to another field
 - each change should trigger an ajax request for fingerprint data and fill in the blank fields (see static/dpm.js)
 - submitting the form with a non-zero amount should perform the full DPM payment process and present a thank-you page
 - entering a zero amount should hide the credit card fields and submitting it, perform a noCharge payment, also resulting in a thankyou page.
+- after the transaction round trip, you should be able to see the data stored in your session, by re-visiting /echo.
 
 ### notes on required fields
 All of the fields below except firstname, lastname, and ZIP are required for payment processing. The fields without an `x_` prefix are used internally by the authorize-net-dpm module for additional validation.

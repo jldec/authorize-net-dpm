@@ -1,6 +1,6 @@
 {
   "name": "authorize-net-dpm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "node.js Express middleware for Authorize.net SIM/DPM",
   "main": "authorize-net-dpm.js",
   "dependencies": {
