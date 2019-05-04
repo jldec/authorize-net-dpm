@@ -1,12 +1,13 @@
 {
   "name": "authorize-net-dpm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "node.js Express middleware for Authorize.net SIM/DPM",
   "main": "authorize-net-dpm.js",
-  "dependencies": {
-  },
-  "devDependencies": {
-  },
+  "dependencies": {},
+  "devDependencies": {},
+  "files": [
+    "authorize-net-dpm.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/jldec/authorize-net-dpm.git"

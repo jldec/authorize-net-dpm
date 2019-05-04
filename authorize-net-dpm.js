@@ -19,7 +19,7 @@
  * (https://github.com/expressjs/session)
  * ==> recommend using persistent session store to avoid data loss
  *
- * copyright 2015, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
 **/
 
 var crypto = require('crypto');

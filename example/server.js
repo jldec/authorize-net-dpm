@@ -1,7 +1,7 @@
 /**
  * authorize-net-dpm example server.js
  *
- * copyright 2015, Jurgen Leschner - github.com/jldec - MIT license
+ * copyright 2015-2019, Jurgen Leschner - github.com/jldec - MIT license
 **/
 
 var debug = require('debug')('dpm:example');

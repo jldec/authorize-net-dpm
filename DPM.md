@@ -1,4 +1,6 @@
-# Notes on DPM
+# DPM
+
+NOTE that [DPM](https://developer.authorize.net/api/upgrade_guide/#dpm) has been [replaced](https://community.developer.authorize.net/t5/The-Authorize-Net-Developer-Blog/Introducing-Authorize-Net-Accept-js/ba-p/54980) with [accept.js](https://developer.authorize.net/api/reference/features/acceptjs.html).
 
 DPM is [presented](http://developer.authorize.net/api/) as an alternative to the other Authorize.Net payment processing integration methods, SIM and AIM. The reality is that DPM is just a special case of SIM.
 

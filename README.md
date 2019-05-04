@@ -58,4 +58,4 @@ app.post(aNetConfig.noCharge,    dpm.postNoCharge);
 
 
 ### license
-(c) 2015 Jurgen Leschner, [MIT](http://opensource.org/licenses/MIT) license
+(c) 2015-2019 Jürgen Leschner, [MIT](https://opensource.org/licenses/MIT) license
