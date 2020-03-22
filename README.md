@@ -1,5 +1,8 @@
 # authorize-net-dpm
 
+> This module is no longer being maintained and MD5 hash usage has been discontinued.  
+> NOTE that [DPM](https://developer.authorize.net/api/upgrade_guide/#dpm) has been [replaced](https://community.developer.authorize.net/t5/The-Authorize-Net-Developer-Blog/Introducing-Authorize-Net-Accept-js/ba-p/54980) with [accept.js](https://developer.authorize.net/api/reference/features/acceptjs.html).
+
 Using DPM, Authorize.Net payments can be posted directly from the customer browser to the Authorize.Net payment gateway, reducing PCI burdens on the merchant's website. The gateway then posts transaction details (without exposing the credit card information) to the merchant server which returns a redirect to a thank-you page. The redirect automatically brings the browser back to the merchant site with the result that the URL in the address bar stays on the same origin even though the form action points to the payment gateway.
 
 This module provides an interface for browsers to fetch the "fingerprint" which authenticates posted transactions as coming from the merchant. The fingerprint values are injected into the form via an ajax JSON request from the browser before the form is submitted to the payment gateway. By injecting the fingerprint dynamically, the payment form can be installed in an application or served from a static website or CDN.
@@ -58,4 +61,4 @@ app.post(aNetConfig.noCharge,    dpm.postNoCharge);
 
 
 ### license
-(c) 2015-2019 Jürgen Leschner, [MIT](https://opensource.org/licenses/MIT) license
+(c) 2015-2020 Jürgen Leschner, [MIT](https://opensource.org/licenses/MIT) license
